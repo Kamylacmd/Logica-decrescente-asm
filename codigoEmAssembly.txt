@@ -1,0 +1,35 @@
+Compilação (assembly) do texto
+Em 17/09/2025
+
+   1                           ORG 0
+   2   00     20 50            LDA NUM1       ;
+   3   02     30 51            ADD NUM2       ;
+   4   04     10 52            STA RES        ;
+   5                    
+   6                    
+   7                    DEC_LOOP:
+   8   06     20 52            LDA RES        ;
+   9   08     D0 00            OUT 0          ;
+  10   0A     70 53            SUB MEN        ;
+  11   0C     10 52            STA RES        ;  
+  12   0E     90 12            JN FIM         ;
+  13   10     80 06            JMP DEC_LOOP   ;
+  14                    
+  15                    FIM:
+  16   12     F0               HLT            ;
+  17                    
+  18                           ORG 80
+  19   50     05               NUM1: DB 5  ;
+  20   51     02               NUM2: DB 2  ;
+  21   52     00               RES:  DB 0  ;
+  22   53     01               MEN:  DB 1  ;
+
+Listagem da tabela de símbolos
+
+Símbolo         Linha   Endereço
+DEC_LOOP            6   006
+FIM                14   012
+MEN                21   053
+NUM1               18   050
+NUM2               19   051
+RES                20   052
