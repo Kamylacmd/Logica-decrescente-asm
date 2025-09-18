@@ -47,7 +47,9 @@ MEN:  DB 1
 
 <br>
 
-![Simulação no NeanderWin](./assets/Adobe%20Express%20-%20simulador.gif) 
+<p align="center">
+  <img src="./assets/Adobe%20Express%20-%20simulador.gif" alt="Simulação no NeanderWin" />
+</p>
 
 --- 
 <div style= "color: gray;">
